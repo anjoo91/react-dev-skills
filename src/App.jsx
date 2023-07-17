@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 import SkillList from './SkillList';
 import NewSkillForm from './NewSkillForm';
 import './App.css';
@@ -12,12 +12,10 @@ const skills = [
 
 export default function App() {
   const [count, setCount] = useState(0);
+  const [skillList, setSkillList] = useState(skills);
 
-  // add new skill to the current list but...
-  // this won't show w.o new state
-  // more on this later
   const addSkill = (newSkill) => {
-    skills.push(newSkill);
+    setSkillList([...skillList, newSkill]);
   };
 
   return (
