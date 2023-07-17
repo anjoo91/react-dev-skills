@@ -1,0 +1,17 @@
+.skill-list-item {
+    border: 2px solid orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 25%;
+  }
+  
+  .level {
+    background-color: teal;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+  
