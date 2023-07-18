@@ -1,37 +1,58 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './NewSkillForm.css';
 
-export default function NewSkillForm({ addSkill }) {
-  //handler function for the submit button
+export default function NewSkillForm ({ onAddSkill }) {
+  const [skillName, setSkillName] = useState(''); // state for skill name
+  const [skillLevel, setSkillLevel] = useState('1'); // state for skill level
+
+  const handleSkillNameChange = (event) => {
+    setSkillName(event.target.value); // update skill name state on input
+  };
+
+  const handleSkillLevelChange = (event) => {
+    setSkillLevel(event.target.value); // update skill level state on select
+  };
+
   const handleSubmit = (event) => {
-    event.preventDefault();
-    const skillInput = event.target.elements.skill.value.trim(); //trim leading/trailing spaces
-    const levelInput = event.target.elements.level.value;
-    if (skillInput !== '') {
-      addSkill({ name: skillInput, level: parseInt(levelInput) }); //ensure level is an int
-      event.target.reset(); 
-    }
+    event.preventDefault(); // prevent form submission
+    const newSkill = { name: skillName, level: parseInt(skillLevel) }; // create new skill object
+    onAddSkill(newSkill); // call onAddSkill() passed from the App component
+    setSkillName(''); // reset the skill name input state
+    setSkillLevel('1'); // reset the skill level select state
   };
 
   return (
-    <form className="new-skill-form" onSubmit={handleSubmit}>
-      <div className="form-row">
-        <label htmlFor="skill">Skill:</label>
-        <input type="text" id="skill" name="skill" />
-      </div>
-
-      <div className="form-row">
-        <label htmlFor="level">Level:</label>
-        <select id="level" name="level">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
-      </div>
-
-      <button type="submit">Add Skill</button>
-    </form>
+    <div className="NewSkillForm">
+      <h2 className="SkillsTitle">Add A Skill</h2>
+      <form onSubmit={handleSubmit}> {/* behavior on form submission */}
+        <div className="SkillRow">
+          <input
+            id="skillInput"
+            type="text"
+            placeholder="Enter Skill"
+            className="NewSkillInput"
+            value={skillName}
+            onChange={handleSkillNameChange}
+          />
+        </div>
+        <div className="SkillRow">
+          <select
+            id="levelSelect"
+            className="NewSkillLevel"
+            value={skillLevel}
+            onChange={handleSkillLevelChange}
+          >
+            <option value="1">Level 1</option>
+            <option value="2">Level 2</option>
+            <option value="3">Level 3</option>
+            <option value="4">Level 4</option>
+            <option value="5">Level 5</option>
+          </select>
+        </div>
+        <button type="submit" className="AddSkillButton">
+          Add Skill
+        </button>
+      </form>
+    </div>
   );
-}
+};

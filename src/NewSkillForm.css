@@ -1,47 +1,51 @@
-.new-skill-form {
-    border: 2px solid orange;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    max-width: 425px;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  
-  .new-skill-form label {
-    color: teal;
-    margin-bottom: 10px;
-  }
-  
-  .new-skill-form input,
-  .new-skill-form select {
-    margin-bottom: 10px;
-    width: 100%;
-  }
-  
-  .new-skill-form .form-row {
-    display: flex;
-    align-items: center;
-  }
-  
-  .new-skill-form .form-row label {
-    display: inline-block;
-    width: 100px;
-    margin-right: 10px;
-  }
-  
-  .new-skill-form .form-row input,
-  .new-skill-form .form-row select {
-    flex: 1;
-  }
-  
-  .new-skill-form button {
-    background-color: teal;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    width: 100%;
-  }
-  
+.NewSkillForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  border: 1px solid orange;
+  border-radius: 8px;
+  padding: 16px;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.SkillsTitle {
+  color: teal;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.SkillRow {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+.NewSkillInput {
+  padding: 4px;
+  border: 1px solid orange;
+  border-radius: 4px;
+}
+
+.NewSkillLevel {
+  padding: 4px;
+  border: 1px solid orange;
+  border-radius: 4px;
+}
+
+.AddSkillButton {
+  margin-top: 8px;
+  padding: 4px 8px;
+  border: 1px solid teal;
+  border-radius: 4px;
+  background-color: teal;
+  color: white;
+}
+
+label {
+  margin-right: 8px;
+}

@@ -1,14 +1,13 @@
 import React from 'react';
 import SkillListItem from './SkillListItem';
+import './SkillList.css';
 
-export default function SkillList({ skills }) {
-  const SkillListItems = skills.map((s, index) => (
-    <SkillListItem key={index} skill={s} />
-  ));
-
+export default function SkillList ({ skills }) {
   return (
-    <div>
-      <ul className="skill-list">{SkillListItems}</ul>
+    <div className="SkillsList">
+      {skills.map((skill, index) => (
+        <SkillListItem key={index} skill={skill} /> // render SkillListItem for each skill
+      ))}
     </div>
   );
-}
+};

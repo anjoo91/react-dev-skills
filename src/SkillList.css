@@ -1,0 +1,28 @@
+.SkillsList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.SkillListItem {
+    border: 1px solid orange;
+    border-radius: 8px;
+    padding: 8px;
+    margin: 8px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.SkillName {
+    color: teal;
+}
+  
+.SkillLevel {
+    color: white;
+    padding: 4px;
+    background-color: teal;
+    border-radius: 16px;
+}
+  
