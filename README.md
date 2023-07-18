@@ -5,11 +5,10 @@ Practice for React.js
 **Screenshots**
 
 Initial App:
-[![react-dev-skills-init.png](https://i.postimg.cc/wBDXzByz/react-dev-skills-init.png)](https://postimg.cc/3yJ4CYFf)
-
+![react-dev-skills-init.png](https://i.postimg.cc/wBDXzByz/react-dev-skills-init.png)
 
 Adding A New Skill: 
-[![react-dev-skills-add.png](https://i.postimg.cc/NMJ5vh4Y/react-dev-skills-add.png)](https://postimg.cc/8Jv1L09n)
+![react-dev-skills-add.png](https://i.postimg.cc/NMJ5vh4Y/react-dev-skills-add.png)
 
 
 **GitHub**: https://github.com/anjoo91/react-dev-skills/tree/main
