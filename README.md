@@ -5,7 +5,7 @@ Practice for React.js
 **Screenshots**
 
 Initial App:
-![react-dev-skills-init.png](https://i.postimg.cc/wBDXzByz/react-dev-skills-init.png)
+![react-dev-skills-init.png](https://i.postimg.cc/0NNLbLvb/react-dev-skills-init.png)
 
 Adding A New Skill: 
 ![react-dev-skills-add.png](https://i.postimg.cc/NMJ5vh4Y/react-dev-skills-add.png)
