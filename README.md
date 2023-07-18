@@ -2,6 +2,16 @@
 
 Practice for React.js
 
+**Screenshots**
+
+Initial App:
+[![react-dev-skills-init.png](https://i.postimg.cc/wBDXzByz/react-dev-skills-init.png)](https://postimg.cc/3yJ4CYFf)
+
+
+Adding A New Skill: 
+[![react-dev-skills-add.png](https://i.postimg.cc/NMJ5vh4Y/react-dev-skills-add.png)](https://postimg.cc/8Jv1L09n)
+
+
 **GitHub**: https://github.com/anjoo91/react-dev-skills/tree/main
 
 **Class Notes**: https://git.generalassemb.ly/SEI-CC/SEI-6-5/tree/main/Unit_3/1-react
