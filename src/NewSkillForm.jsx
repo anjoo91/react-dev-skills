@@ -5,15 +5,15 @@ export default function NewSkillForm ({ onAddSkill }) {
   const [skillName, setSkillName] = useState(''); // state for skill name
   const [skillLevel, setSkillLevel] = useState('1'); // state for skill level
 
-  const handleSkillNameChange = (event) => {
+  function handleSkillNameChange (event) {
     setSkillName(event.target.value); // update skill name state on input
   };
 
-  const handleSkillLevelChange = (event) => {
+  function handleSkillLevelChange (event) {
     setSkillLevel(event.target.value); // update skill level state on select
   };
 
-  const handleSubmit = (event) => {
+  function handleSubmit (event) {
     event.preventDefault(); // prevent form submission
     const newSkill = { name: skillName, level: parseInt(skillLevel) }; // create new skill object
     onAddSkill(newSkill); // call onAddSkill() passed from the App component
