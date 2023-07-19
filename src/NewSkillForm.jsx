@@ -16,7 +16,7 @@ export default function NewSkillForm ({ onAddSkill }) {
   function handleSubmit (event) {
     event.preventDefault(); // prevent form submission
     const newSkill = { name: skillName, level: parseInt(skillLevel) }; // create new skill object
-    onAddSkill(newSkill); // call onAddSkill() passed from the App component
+    onAddSkill(newSkill); // call onAddSkill() passed from the App component, which execs handleAddSkill w. newSkill
     setSkillName(''); // reset the skill name input state
     setSkillLevel('1'); // reset the skill level select state
   };

@@ -11,8 +11,8 @@ export default function App() {
     { name: 'Python', level: 2 },
   ]);
 
-  const handleAddSkill = (newSkill) => {
-    setSkills([...skills, newSkill]); // update skills state with new skill
+  function handleAddSkill (newSkill) {
+    setSkills([...skills, newSkill]); // update skills state with new skill, but keep old skills
   };
 
   return (
